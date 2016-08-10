@@ -75,7 +75,8 @@ typedef NS_ENUM(NSInteger, Test) {
     testView.backgroundColor = [UIColor darkGrayColor];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:testView];
     [testView addTarget:self action:@selector(clickSure:) forControlEvents:UIControlEventTouchUpInside];
-    // testView addTarget:<#(nullable id)#> action:<#(nonnull SEL)#> forControlEvents:<#(UIControlEvents)#>
+    
+// testView addTarget:<#(nullable id)#> action:<#(nonnull SEL)#> forControlEvents:<#(UIControlEvents)#>
     
 //    self.navigationItem.rightBarButtonItem  tag
 //    addtarget:self action:@selector(clickSure:)];
@@ -110,8 +111,7 @@ typedef NS_ENUM(NSInteger, Test) {
     [_timer setFireDate:[NSDate distantFuture]];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
