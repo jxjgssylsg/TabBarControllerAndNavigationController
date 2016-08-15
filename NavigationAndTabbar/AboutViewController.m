@@ -75,6 +75,7 @@ typedef NS_ENUM(NSInteger, Test) {
   
     [segMent addTarget:self action:@selector(segMentClick:) forControlEvents:UIControlEventValueChanged];
     self.navigationItem.titleView = segMent;
+    // self.navigationItem.titleView = nil;
     self.navigationItem.title = @"syl 1"; //
     self.title = @"syl"; // 上两个都能设置, 可以换位置试试
     

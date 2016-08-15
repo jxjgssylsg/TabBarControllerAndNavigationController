@@ -7,7 +7,7 @@
 //
 
 #import "UITabBar+badge.h"
-// #define TabbarItemNums 5.0    //tabbar的数量 如果是5个设置为5.0
+// #define TabbarItemNums 5.0  // tabbar的数量 如果是5个设置为5.0
 
 @implementation UITabBar (badge)
 // 显示小红点
@@ -23,7 +23,7 @@
     CGRect tabFrame = self.frame;
     
     // 确定小红点的位置
-    float percentX = (index +0.6) / itemNum;
+    float percentX = (index + 0.6) / itemNum;
     CGFloat x = ceilf(percentX * tabFrame.size.width);
     CGFloat y = ceilf(0.1 * tabFrame.size.height);
     badgeView.frame = CGRectMake(x, y, 10, 10); // 圆形大小为 10
@@ -40,7 +40,7 @@
 - (void)removeBadgeOnItemIndex:(int)index {
     // 按照 tag 值进行移除
     for (UIView *subView in self.subviews) {
-        if (subView.tag == 888+index) {
+        if (subView.tag == 888 + index) {
             [subView removeFromSuperview];
         }
     }
