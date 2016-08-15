@@ -32,6 +32,7 @@
 		9E24908F17CBF32A007BE786 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E24908E17CBF32A007BE786 /* AboutViewController.m */; };
 		9E24909217CBF351007BE786 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E24909117CBF351007BE786 /* SettingViewController.m */; };
 		9E24909417CBFB79007BE786 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E24909317CBFB79007BE786 /* MainWindow.xib */; };
+		C32F56381D61682400B85F6D /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = C32F56371D61682400B85F6D /* UITabBar+badge.m */; };
 		C37310821D58AC6500AF4C2C /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C37310811D58AC6500AF4C2C /* NSTimer+Blocks.m */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,8 @@
 		9E24909017CBF350007BE786 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		9E24909117CBF351007BE786 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		9E24909317CBFB79007BE786 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		C32F56361D61682400B85F6D /* UITabBar+badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+badge.h"; sourceTree = "<group>"; };
+		C32F56371D61682400B85F6D /* UITabBar+badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+badge.m"; sourceTree = "<group>"; };
 		C37310801D58AC6500AF4C2C /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Blocks.h"; sourceTree = "<group>"; };
 		C37310811D58AC6500AF4C2C /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Blocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +123,6 @@
 			children = (
 				9E24905D17CBEB6C007BE786 /* AppDelegate.h */,
 				9E24905E17CBEB6C007BE786 /* AppDelegate.m */,
-				9E24905517CBEB6C007BE786 /* Supporting Files */,
 				9E24908D17CBF32A007BE786 /* AboutViewController.h */,
 				9E24908E17CBF32A007BE786 /* AboutViewController.m */,
 				9E24908717CBF2EA007BE786 /* FavoriteViewController.h */,
@@ -134,6 +136,9 @@
 				9E24909317CBFB79007BE786 /* MainWindow.xib */,
 				C37310801D58AC6500AF4C2C /* NSTimer+Blocks.h */,
 				C37310811D58AC6500AF4C2C /* NSTimer+Blocks.m */,
+				C32F56361D61682400B85F6D /* UITabBar+badge.h */,
+				C32F56371D61682400B85F6D /* UITabBar+badge.m */,
+				9E24905517CBEB6C007BE786 /* Supporting Files */,
 			);
 			path = NavigationAndTabbar;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				9E24905B17CBEB6C007BE786 /* main.m in Sources */,
 				9E24905F17CBEB6C007BE786 /* AppDelegate.m in Sources */,
 				9E24908617CBF2A0007BE786 /* HomeViewController.m in Sources */,
+				C32F56381D61682400B85F6D /* UITabBar+badge.m in Sources */,
 				9E24908917CBF2EA007BE786 /* FavoriteViewController.m in Sources */,
 				9E24908C17CBF308007BE786 /* SearchViewController.m in Sources */,
 				9E24908F17CBF32A007BE786 /* AboutViewController.m in Sources */,

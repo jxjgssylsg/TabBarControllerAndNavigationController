@@ -7,6 +7,7 @@
 //
 
 #import "FavoriteViewController.h"
+#import "UITabBar+badge.h"
 
 @interface FavoriteViewController ()
 
@@ -32,6 +33,8 @@
     self.navigationItem.title = @"syl 1"; //
     self.title = @"syl 2"; // 上两个都能设置, 可以换位置试试
    
+    // 显示小红点
+    [self.tabBarController.tabBar showBadgeOnItemIndex:1 barItemNum:5];
 }
 
 - (void)didReceiveMemoryWarning

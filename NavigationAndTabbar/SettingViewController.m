@@ -28,6 +28,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor grayColor];
+    
+    NSUserDefaults *user1 = [NSUserDefaults standardUserDefaults];
+    NSString *passWordsss = [user1 objectForKey:@"userPassWord"];
+    NSLog(@"%@", passWordsss);
+    
 }
 
 - (void)didReceiveMemoryWarning

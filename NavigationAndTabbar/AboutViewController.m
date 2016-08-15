@@ -39,6 +39,13 @@ typedef NS_ENUM(NSInteger, Test) {
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+    NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+    NSString *passWord = [user objectForKey:@"userPassWord"];
+    NSLog(@" haha ");
+    
+    NSString *passWordOne = @"1234567";
+    [user setObject:passWordOne forKey:@"userPassWord"];
+    
     Test justTry = TestA | TestB;
     justTry = TestA & TestB;
     NSLog(@"%ld",justTry);
@@ -59,13 +66,13 @@ typedef NS_ENUM(NSInteger, Test) {
     [segMent insertSegmentWithTitle:@"tem2" atIndex:1 animated:YES];
     [segMent insertSegmentWithTitle:@"tem3" atIndex:2 animated:YES];
     segMent.segmentedControlStyle = UISegmentedControlStyleBar;
-    segMent.momentary = NO;  //设置在点击后是否恢复原样
-    segMent.multipleTouchEnabled=NO;  //可触摸
-    segMent.selectedSegmentIndex =0;   //指定索引
+    segMent.momentary = NO;  // 设置在点击后是否恢复原样
+    segMent.multipleTouchEnabled=NO;  // 可触摸
+    segMent.selectedSegmentIndex =0;   // 指定索引
     // segmentedControl.tintColor = [UIColor blackColor];
     // segmentedControl.tintColor = [UIColor colorWithRed:224/255 green:225/255 blue:226/255 alpha:1];
     segMent.tintColor =[UIColor grayColor];
-    // segmentedControl
+  
     [segMent addTarget:self action:@selector(segMentClick:) forControlEvents:UIControlEventValueChanged];
     self.navigationItem.titleView = segMent;
     self.navigationItem.title = @"syl 1"; //
@@ -76,7 +83,7 @@ typedef NS_ENUM(NSInteger, Test) {
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:testView];
     [testView addTarget:self action:@selector(clickSure:) forControlEvents:UIControlEventTouchUpInside];
     
-// testView addTarget:<#(nullable id)#> action:<#(nonnull SEL)#> forControlEvents:<#(UIControlEvents)#>
+//    testView addTarget:<#(nullable id)#> action:<#(nonnull SEL)#> forControlEvents:<#(UIControlEvents)#>
     
 //    self.navigationItem.rightBarButtonItem  tag
 //    addtarget:self action:@selector(clickSure:)];
